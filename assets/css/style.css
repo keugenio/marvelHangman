@@ -1,0 +1,126 @@
+/**
+ First External CSS Stylesheet
+ **/
+
+/*
+Each of these CSS elements is associated with an HTML Element, Class, or ID.
+Flip between this CSS file and the HTML to see how things line up.
+Experiment with deleting lines of code from the CSS to see how it affects the webpage when you refresh in the browser.
+*/
+
+body{
+  padding: 0;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777777;
+  background-color: teal;
+  margin: 0 auto;
+}
+
+/* general tags */
+h1 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 20px;
+}
+
+a:link, a:visited {
+    padding: 10px;
+    text-decoration: none;
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.hover-outline:hover, img.icon:hover, img.portfolio-image:hover{
+  outline: 2px solid #4aaaa5;
+  outline-offset: 5px;
+}
+
+input, textarea{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.title{
+  color: #4aaaa5; 
+  font-weight: bold;
+  text-align: center;
+}
+form{
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/********** header ***********/
+#header{
+  background-color: #f5f5f5;
+  margin-bottom: 2px;
+}
+#headerMenu{
+  vertical-align: middle;
+  padding: 20px;
+  white-space: nowrap;
+  text-align: center;
+}
+#header-title{  
+  color: white;
+  padding: 20px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/*************** main window ******************/
+
+#main-body{
+  background-image: url("../images/bg.png");    
+  margin-bottom: 2px;
+}
+#bio-image, .portfolio-image {
+  display: block;
+  opacity: .7;
+  margin: 2% auto;
+}
+#main-content{
+    background-color: white;
+    border-radius: 15px;
+    margin: 2% 2% 0 2%;
+    padding: 10px;
+}
+#sidebar {
+  margin: 2% 2% 0 2%;
+  padding: 0;  
+}
+#sidebar-content {
+  display: block;
+  background-color: white;  
+  border-radius: 15px;  
+}
+
+/******** portfolio objects **************/
+
+.portfolio-object{
+    display: inline-block;
+    margin: 10px;    
+}
+.portfolio-icon-title{
+  bottom: 18px;
+  font-family: Times, serif;
+  font-size: 18px;
+  background-color: teal;
+  color: white;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Kui Eugenio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">  
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">    
+</head>
+
+<body>
+  <div class="container">
+  <!-- *************** header ****************** -->
+      <div class="row" id="header">
+        <div class="col-sm-6">
+          <h1 class="bg-primary" id="header-title">Hangman</h1>
+        </div>
+        <div class="col-sm-6">
+            <nav class="nav nav-pills justify-content-center">
+                <a class="nav-item nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+           </nav>
+        </div>
+        <div class="container">               
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li>Hangman</li>     
+            </ol>
+        </div>
+      </div>
+
+<!-- ***************  MAIN CONTENT ******************* -->
+    <div class="row" id="main-body">
+        <div class="col-sm-8" id="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 pull-left">
+                    <div class="container">
+                        <h1>Marvel Hangman</h1>
+                        <hr>
+                        <p>Guess the Marvel comic character name.</p>
+                        <p id="instructions">Just begin typing your guesses to start.</p><br>
+                        <div id="guessType">Current Guess:</div>
+                        <div id="marvelCharacter" class="text-center">
+                            loading...
+                        </div>
+                        <div id="description"> if nothing loads, Marvel server may be busy. Try again.</div>  
+                        <hr>                        
+                        <div id="messageboard"></div> 
+                        <hr>
+                        <FORM>
+                            <INPUT id="btnReload" TYPE="button" onClick="history.go(0)" VALUE="Reload">
+                        </FORM>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <figure>
+                        <img id="marvelCharacterImage" class="figure-img img-fluid rounded text-center d-block" alt="character image"></img>
+                        <figcaption class="figure-caption align-bottom text-center" id="marvelCopyright"></figcaption>
+                    </figure>                    
+                </div>              
+            </div>
+        </div>
+
+            <script src="assets/js/hangman.js"></script>        
+        </div>
+
+        <div class="col-sm-3" id="sidebar">
+            <div id="sidebar-content">
+                <h4 class="title" style="white-space: nowrap;"> Connect with me </h4>
+                <hr>   
+                <a href="https://github.com/keugenio">
+                            <img class="icon" src="assets/images/github.png" alt="github profile"></a>
+                <a href="https://www.linkedin.com/in/kui-eugenio-34ab289/">
+                            <img class="icon" src="assets/images/linkedin.png" alt="linkedin profile"></a>
+                <a href="https://stackexchange.com/users/11266033/keugenio">
+                            <img class="icon" src="assets/images/stackoverflow.png" alt="stackoverflow profile"></a>
+            </div>
+        </div>
+    </div>
+<!-- ***************  FOOTER ******************* -->
+    <div class="row">
+        <div class="col-sm-12 text-center" style="background-color: silver;">
+           <p>© 2017, Kui Eugenio, All rights reserved</p>
+        </div>  
+    </div
+
+  </div><!--container-->
+
+
+</body>
+
+</html>
